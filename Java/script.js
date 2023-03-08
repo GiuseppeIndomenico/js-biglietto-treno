@@ -29,20 +29,45 @@ if (passengerYears < 18) {
 }
 
 
+console.log (totalPrice)
+
+if ( (isNaN(passengerKm)) || (isNaN(passengerYears))  ) { 
 
 document.getElementById("ticket").innerHTML =
 
 
+    `
+    <h1 class= "m-5">
+    Gentilissimo Cliente!
+    
+    </h1>
+   <h2 class= "m-5"> La smetta di inserire fesserie e non ci
+    faccia perdere tempo!
+    </h2>
+    
+    `
+
+
+}
+
+else {
+
+    
+    
+    document.getElementById("ticket").innerHTML =
+    
+    
 
     `
     <h1 class= "m-5">
     Gentile Cliente!
     
     </h1>
-   <h2 class= "m-5">  Il prezzo del suo biglietto è: ${totalPrice.toFixed(2) } &euro; buona giornata!
+    <h2 class= "m-5">  Il prezzo del suo biglietto è: ${totalPrice.toFixed(2) } &euro; buona giornata!
     </h2>
     
     `
+}
 
 
 
